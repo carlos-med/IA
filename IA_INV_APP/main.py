@@ -15,8 +15,14 @@ st.set_page_config(
 # =========================
 # RUTA DEL MODELO ENTRENADO
 # =========================
-RUTA_MODELO = "runs/classify/train-4/weights/best.pt"
-
+RUTA_MODELO = os.path.join(
+    os.path.dirname(__file__),
+    "runs",
+    "classify",
+    "train-4",
+    "weights",
+    "best.pt"
+)
 
 # =========================
 # CARGAR MODELO
